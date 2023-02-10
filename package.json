@@ -1,0 +1,19 @@
+{
+  "name": "onlineshop",
+  "source": "src/js/app.js",
+  "scripts": {
+    "start": "parcel ./src/pages/*.html --open",
+    "build": "parcel build ./src/pages/*.html"
+  },
+  "keywords": [],
+  "author": "Adhamjon",
+  "license": "ISC",
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "axios": "^1.3.2",
+    "buffer": "^6.0.3",
+    "lodash": "^4.17.21",
+    "parcel": "^2.8.3",
+    "toastify-js": "^1.12.0"
+  }
+}
