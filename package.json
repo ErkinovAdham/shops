@@ -3,7 +3,15 @@
   "source": "src/js/app.js",
   "scripts": {
     "start": "parcel ./src/pages/*.html --open",
-    "build": "parcel build ./src/pages/*.html"
+    "build": "parcel build ./src/pages/*.html",
+    "test": "(eslint lib || true) && jest"
+  },
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "url:*.svg": ["@parcel/transformer-svgo", "@parcel/transformer-raw"]
+  },
+  "optimizers": {
+    "*.{png,jpg,jpeg,svg}": []
   },
   "keywords": [],
   "author": "Adhamjon",
